@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:text="Search"
         android:textSize="@dimen/_10sdp"
+        android:letterSpacing="0"
         android:layout_marginEnd="@dimen/_15sdp"
         app:layout_constraintTop_toTopOf="@id/senderIdEditText"
         app:layout_constraintBottom_toBottomOf="@id/senderIdEditText"
