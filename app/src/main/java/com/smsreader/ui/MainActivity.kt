@@ -71,11 +71,6 @@ class MainActivity : AppCompatActivity() {
             .registerReceiver(smsReceiver, IntentFilter("SMS_RECEIVED_ACTION"))
     }
 
-    override fun onPause() {
-        super.onPause()
-        LocalBroadcastManager.getInstance(this).unregisterReceiver(smsReceiver)
-    }
-
     private fun checkSmsPermission(): Boolean {
         return ContextCompat.checkSelfPermission(
             this,

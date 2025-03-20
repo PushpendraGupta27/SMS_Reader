@@ -42,7 +42,7 @@ class MsgAdapter(private var arrayList: ArrayList<MsgDataModel>,) :
     fun updateList(newList: ArrayList<MsgDataModel>) {
         arrayList.clear()
         arrayList.addAll(newList)
-        notifyDataSetChanged() // Notify RecyclerView that data has changed
+        notifyDataSetChanged()
     }
 
     private fun convertMillisToDateTime(millis: Long): String {
